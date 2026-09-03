@@ -1,13 +1,11 @@
 /* GENERAL BODY */
 body{
-    /* background-color: darkgrey; */
-    /* image goes here */
     margin-left:auto;
     margin-right:auto;
     background-image: url("../resources/bg.png"); ;
     padding-left: 230px;
     padding-right: 230px;
-    min-width: 400px;
+    min-width: 500px;
 }
 h1, h2, h3, h4, h5, h6{
     text-align: center;
@@ -17,6 +15,9 @@ p{
     text-align: center;
     font-family: sans-serif;
 }
+
+
+
 /* NAVIGATION BAR */
 .navbar {
     display: flex;
@@ -30,8 +31,9 @@ p{
     margin-right: auto;
     min-width: 400px;
     gap: 20px;
+    border-radius: 10px;
 }
-a {
+.navbar a {
     color: white;
     font-family: impact;
     font-size: 25px;
@@ -41,9 +43,17 @@ a {
     /* margin-left: 20px; */
     
 }
-a:hover {
+.navbar a:hover {
     color: #5678B9;
 }
+.navbar a:active{
+    color: #002275;
+}
+.navbar a.current{
+    color: #A9BCE0;
+}
+
+
 
 /* HOMEPAGE */
 .homepage{
@@ -60,9 +70,101 @@ a:hover {
     margin-top: -10px;
 }
 
+
+
 /* MEDIA */
 img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+/* DASHBOARD */
+.homepage p{
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.homepage h1{
+    color: #5678B9;
+}
+.dashboard{
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #002275;
+}
+.Dash_Header{
+    background-color: #5678B9;
+    color: white;
+    font-family: impact;
+}
+.Q{
+    background-color: #5678B9;
+    color: white;
+    font-family: impact;
+}
+.dashboard th, .dashboard td{
+    border: 1.5px solid #002275;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+/* BLOG */
+.blogbuttons {
+    display: flex;
+    justify-content: center;
+    background-color: #5678B9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 400px;
+    gap: 20px;
+    border-radius: 10px;
+}
+.blogbuttons a {
+    color: white;
+    font-family: impact;
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+}
+.blogbuttons a:hover {
+    color: #002275;
+}
+.blogbuttons a.current{
+    color: #A9BCE0;
+}
+.mainpage_blog{
+    background-color: #F7F7F8;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #5678B9;
+}
+.mainpage_blog h1{
+    font-family: impact;
+}
+
+
+
+/* ABOUT */
+.bio{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: #002270;
+}
+.bio p{
+    text-align: left;
 }
