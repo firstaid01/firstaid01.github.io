@@ -11,9 +11,13 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-family: impact;
 }
+.homepage h2{
+    color:#002270;
+}
 p{
     text-align: center;
     font-family: sans-serif;
+    color: #002270;
 }
 
 
@@ -61,8 +65,11 @@ p{
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    border-radius: 10px;
+    border-style: solid;
+    /* border-radius: 5px; */
     border-color: #002275;
+    border-radius: 10px;
+
 }
 .homepage h1{
     margin-left: auto;
@@ -77,6 +84,12 @@ img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+
+}
+.cino{
+    height: 250px;
+    aspect-ratio: 2/3;
 }
 .github{
     height: 96px;
@@ -137,7 +150,6 @@ img{
     font-size: 25px;
     text-decoration: none;
     transition: color 0.2s ease;
-    
 }
 .blogbuttons a:hover {
     color: #002275;
@@ -145,7 +157,8 @@ img{
 .blogbuttons a.current{
     color: #A9BCE0;
 }
-.mainpage_blog{
+/* Don't look at this */
+/* .mainpage_blog{
     background-color: #F7F7F8;
     display: block;
     flex-direction: column;
@@ -153,11 +166,13 @@ img{
     margin-right: auto;
     text-align: center;
     color: #5678B9;
-}
-.mainpage_blog h1{
+} */
+/* .mainpage_blog h1{
     font-family: impact;
     padding-top: -20px;
-}
+} */
+
+
 
 
 
@@ -167,7 +182,6 @@ img{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
-    color: #002270;
 }
 .bio p{
     text-align: left;
