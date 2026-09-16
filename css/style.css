@@ -1,4 +1,4 @@
-/* GENERAL BODY */
+/* general body */
 body{
     margin-left:auto;
     margin-right:auto;
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-family: impact;
 }
-.homepage h2{
+.main h2{
     color:#002270;
 }
 p{
@@ -22,7 +22,7 @@ p{
 
 
 
-/* NAVIGATION BAR */
+/* navigation bar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -59,8 +59,8 @@ p{
 
 
 
-/* HOMEPAGE */
-.homepage{
+/* homepage */
+.main{
     background-color: #F7F7F8;
     margin-left: auto;
     margin-right: auto;
@@ -71,7 +71,7 @@ p{
     border-radius: 10px;
 
 }
-.homepage h1{
+.main h1{
     margin-left: auto;
     margin-right: auto;
     margin-top: -10px;
@@ -79,11 +79,11 @@ p{
 
 
 
-/* MEDIA */
+/* media */
 img{
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     border-radius: 10px;
 
 }
@@ -91,18 +91,24 @@ img{
     height: 250px;
     aspect-ratio: 2/3;
 }
-.github{
-    height: 96px;
-    width: 96px;
+.me{
+
+    
+      width: 100%;
+      height: 80%;
+    /* max-width: 350px;
+    object-fit: cover;
+    border-radius: 10px; */
 }
 
 
 /* DASHBOARD */
-.homepage p{
+.main p{
     margin-top: -10px;
     margin-bottom: 20px;
+    font-size: 20px;
 }
-.homepage h1{
+.main h1{
     color: #5678B9;
 }
 .dashboard{
@@ -177,12 +183,27 @@ img{
 
 
 /* ABOUT */
-.bio{
-    padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-}
+
 .bio p{
     text-align: left;
+    font-size: 20px;
+}
+.bio-container{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.bio{
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    align-items:flex-start;
+}
+.hobbylist{
+    font-family: sans-serif;
+    color: #002270;
 }
