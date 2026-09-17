@@ -207,3 +207,19 @@ img{
     font-family: sans-serif;
     color: #002270;
 }
+
+
+/* WHY IT */
+.why p{
+    text-align: left;
+    font-size: 20px;
+}
+.why-container{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.why{
+    padding-top: 15px;
+    padding-left: 15px;
+}
