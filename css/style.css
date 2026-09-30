@@ -223,3 +223,41 @@ img{
     padding-top: 15px;
     padding-left: 15px;
 }
+
+
+
+/* SWOT TABLE */
+
+.swot-section {
+    margin-top: 30px;
+}
+
+.swot-section h2 {
+    color: #002275;
+}
+
+.swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.swot-table {
+    border: 2px solid #002275;
+    padding: 20px;
+    background-color: #F7F7F8;
+}
+
+.swot-box h3 {
+    color: #002275;
+}
+
+.swot-box li {
+    margin-bottom: 10px;
+}
+
+/* GOALS */
+.mission p{
+    text-align: left;
+}
