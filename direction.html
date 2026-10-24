@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <link rel="stylesheet" href="./css/style.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-            <title>Direction</title>
-        </head>
-        <body>
-            <!-- NAVBAR HERE -->
-            <nav class="navbar">
-                    <a href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a class="current" href="./blog.html">BLOG</a>
-                    <a href="./dashboard.html">DASHBOARD</a>
-                    <a href="./whyit.html">WHY IT?</a>
-            </nav>            
-                <main class="main">
-                    <h1>BLOG</h1>
-                <nav class="blogbuttons">
-                    <a href="./goals.html">GOALS</a>
-                    <a class="current" href="./direction.html">DIRECTION</a>
-                </nav>
-                        <!-- <h1 class="direction"></h1> -->
-                </main>
-        </body>
-    </html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Future direction, goals in ICT.">
+    <title>My future direction | Zsombor Antal</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a class="current" href="./blog.html">BLOG</a>
+        <a href="./dashboard.html">DASHBOARD</a>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+            <img id="theme-icon" src="./resources/moon.svg" alt="Enable dark mode">
+        </button>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <main class="main">
+        <h1>WHERE I SEE MYSELF IN THE FUTURE</h1>
+        <article class="blog-article">
+            <p class="post-date">8 October 2026</p>
+            <p>After finishing my course at HZ and becoming proficient in programming and problem solving, I would like
+                to be working in the software engineering field.</p>
+            <p>I have heard that being a game developer is challenging, but I like the idea of creating and polishing a
+                game based on feedback from the community who play said game. Although, I would surely need to work as a
+                part of a game studio first before jumping headfirst into being a solo-developer.
+            </p>
+            <p>Though first, I need to move towards that future. I need to finish my studies, become more confident with
+                programming and build a portfolio that shows what I can do. I will need patience and consistent
+                practice, especially when I face concepts that I struggle with in the beginning.</p>
+        </article>
+        <p class="blog-back"><a href="./blog.html">← Back to all blog posts</a></p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contact">
+            <p> <img src="./resources/Instagram_Glyph_White.svg" alt="Instagram"> <a
+                    href="https://www.instagram.com/zs.antal0/" target="_blank">zs.antal0</a>
+            </p>
+            <p> <img src="./resources/GitHub_Invertocat_White.svg" alt="GitHub"> <a href="https://github.com/firstaid01"
+                    target="_blank">firstaid01</a> </p>
+            <p> <img class="email-icon" src="./resources/mail.svg" alt="Email"> anta0002@hz.nl </p>
+        </div>
+        <div class="footer-copyright">
+            <p>Zsombor Antal</p>
+            <p>© 2026</p>
+        </div>
+        <img class="hz-logo" src="./resources/hz-logo.svg" alt="HZ University of Applied Sciences shield">
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/darkmode.js"></script>
+</body>
+
+</html>

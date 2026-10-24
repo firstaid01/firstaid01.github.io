@@ -5,46 +5,105 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Goals</title>
+    <meta name="description" content="My personal SWOT analysis, study goals, and mission for my first year.">
+    <title>Study goals | Zsombor Antal</title>
 </head>
 
 <body>
-    <!-- NAVBAR HERE -->
+    <!-- NAVBAR -->
     <nav class="navbar">
         <a href="./index.html">HOME</a>
         <a href="./about.html">ABOUT</a>
         <a class="current" href="./blog.html">BLOG</a>
         <a href="./dashboard.html">DASHBOARD</a>
-        <a href="./whyit.html">WHY IT?</a>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+            <img id="theme-icon" src="./resources/moon.svg" alt="Enable dark mode">
+        </button>
     </nav>
+
+    <!-- MAIN BODY -->
     <main class="main">
-        <h1>BLOG</h1>
-        <nav class="blogbuttons">
-            <a class="current" href="./goals.html">GOALS</a>
-            <a href="./direction.html">DIRECTION</a>
-        </nav>
-        
-        <!-- MISSION -->
-        <div class="mission">
-            <h2>MY MISSION THIS YEAR</h2>
-            <p>
-                My goal for this year is fixing my time-management and planning.
-                I must be able to study without problems and as efficiently as
-                possible, no more distractions, no more procrastination.
+        <h1>MY STUDY GOALS</h1>
+        <article class="blog-article">
+            <p class="post-date">24 September 2026</p>
+            <p>While I want to learn ICT, I also need to be able to look into myself and realize both my positive and
+                negative qualities to be able to succeed, both academically and personally.</p>
+
+            <!-- SWOT ANALISYS-->
+            <h2>My own SWOT:</h2>
+            <div class="swot-grid">
+                <section class="swot-item">
+                    <h3>Strengths</h3>
+                    <ul>
+                        <li><b>Perfectionism:</b> I always try to do my best in every situation.</li>
+                        <li><b>Eagerness to learn:</b> I am always open to learning new things.</li>
+                        <li><b>Self-awareness:</b> I recognize my mistakes and I love constructive feedback
+                            and guidance.</li>
+                    </ul>
+                </section>
+                <section class="swot-item">
+                    <h3>Weaknesses</h3>
+                    <ul>
+                        <li><b>Perfectionism:</b> I can get frustrated when something does not look or work
+                            the way I want it to.</li>
+                        <li><b>Procrastination:</b> I sometimes delay doing assignments until the last moment.
+                        </li>
+                        <li><b>Anxiety:</b> Exams and deadlines can make me feel stressed.</li>
+                    </ul>
+                </section>
+                <section class="swot-item">
+                    <h3>Opportunities</h3>
+                    <ul>
+                        <li><b>Internship</b> opportunities</li>
+                        <li><b>Lecturers</b> who are supportive and who can help me with learning difficulties and
+                            procrastination.</li>
+                        <li><b>Meeting new people</b> and learning languages.</li>
+                    </ul>
+                </section>
+                <section class="swot-item">
+                    <h3>Threats</h3>
+                    <ul>
+                        <li><b>Difficulty focusing</b></li>
+                        <li><b>Distractions</b> from my phone, social media, or video games</li>
+                        <li><b>Language barrier</b> (No dutch knowledge as of now)</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- MISSION -->
+            <h2>My mission for this year</h2>
+            <p>My goal for this year is fixing my time-management and planning. I must be able to study without problems
+                and as efficiently as possible, no more distractions, no more procrastination.
+
+                I will be working extra hard to make sure I become a good software developer, starting from very basic
+                knowledge or even from scratch.
+
+                I will do extra tasks to understand entirely new or difficult concepts. I will write tiny programs in my
+                free time to train my algorithmical and logical thinking. I will also go easy on myself as a
+                perfectionist, I can’t expect myself to become a developer overnight.
             </p>
-            <p>
-                I will be working extra hard to make sure I become a good software
-                developer, starting from very basic knowledge or even from scratch.
-            </p>
-            <p>
-                I will do extra tasks to understand entirely new or difficult
-                concepts. I will write tiny programs in my free time to train my
-                algorithmical and logical thinking. I will also go easy on myself
-                as a perfectionist, I can't expect myself to become a developer
-                overnight.
-            </p>
-        </div>
+        </article>
+        <p class="blog-back"><a href="./blog.html">← Back to all blog posts</a></p>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contact">
+            <p> <img src="./resources/Instagram_Glyph_White.svg" alt="Instagram"> <a
+                    href="https://www.instagram.com/zs.antal0/" target="_blank">zs.antal0</a>
+            </p>
+            <p> <img src="./resources/GitHub_Invertocat_White.svg" alt="GitHub"> <a href="https://github.com/firstaid01"
+                    target="_blank">firstaid01</a> </p>
+            <p> <img class="email-icon" src="./resources/mail.svg" alt="Email"> anta0002@hz.nl </p>
+        </div>
+        <div class="footer-copyright">
+            <p>Zsombor Antal</p>
+            <p>© 2026</p>
+        </div>
+        <img class="hz-logo" src="./resources/hz-logo.svg" alt="HZ University of Applied Sciences shield">
+    </footer>
+    
+    <!-- JS -->
+    <script src="./js/darkmode.js"></script>
 </body>
 
 </html>

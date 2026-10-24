@@ -1,35 +1,64 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <link rel="stylesheet" href="./css/style.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-            <title>Home</title>
-        </head>
-        <body>
-            <!--PLANS:
-                IMPACT FONT
-                CENTRAL COLORED BG
-                DIFFERENT COLOR/IMAGE BG BEHIND CENTRAL -->
-            <!-- NAVBAR HERE -->
-            <nav class="navbar">
-                    <a class="current" href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./blog.html">BLOG</a>
-                    <a href="./dashboard.html">DASHBOARD</a>
-                    <a href="./whyit.html">WHY IT?</a>
-            </nav>
-                <main class="main">
-                    <h1>HOME PAGE</h1>
-                    <img class="cino" src="./resources/cino2.jpeg" alt="Cino, my cat at home">
-                    <h2>Welcome to my site</h2>
-                    <p>This page is about introducing myself and my interests about IT and general topics as a first year ITC student.</p>
-                    <p>Everything is subject to change and half finished.</p>
-                </main>
-        </body>
-        <!-- Simple footer prototype with contact details and whatnot -->
-        <!-- <footer>
-                    <nav class="navbar">
-                    </nav>
-        </footer> -->
-    </html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="My ICT portfolio at HZ University of Applied Sciences">
+    <title>Home | My ICT Portfolio</title>
+</head>
+<!-- NAVBAR  -->
+
+<body>
+    <nav class="navbar">
+        <a class="current" href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./dashboard.html">DASHBOARD</a>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+            <img id="theme-icon" src="./resources/moon.svg" alt="Enable dark mode">
+        </button>
+    </nav>
+
+    <!-- MAIN BODY -->
+    <main class="main">
+        <h1>MY PORTFOLIO WEBSITE</h1>
+        <section class="index-intro">
+            <div class="index-main">
+                <h2>Hello!</h2>
+                <p>My name is Zsombor Antal, and this is my portfolio website. I have made this website for the
+                    Programme- & Career Orientation course at HZ University of Applied Sciences.</p>
+                <p>This site shows my journey as an ICT student, including what I'm currently learning and what I hope
+                    to achieve in the future.
+                </p>
+                <p>You can read more about me in the <b>About</b> section, or check my blogposts in the <b>Blog</b>. To
+                    see my study progress, click the <b>Dashboard</b> section.</p>
+            </div>
+            <img class="me2" src="./resources/me2.jpeg" alt="Picture">
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-contact">
+            <p>
+                <img src="./resources/Instagram_Glyph_White.svg" alt="Instagram">
+                <a href="https://www.instagram.com/zs.antal0/" target="_blank">zs.antal0</a>
+            </p>
+            <p>
+                <img src="./resources/GitHub_Invertocat_White.svg" alt="GitHub">
+                <a href="https://github.com/firstaid01" target="_blank">firstaid01</a>
+            </p>
+            <p><img class="email-icon" src="./resources/mail.svg" alt="Email"> anta0002@hz.nl</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Zsombor Antal</p>
+            <p>© 2026</p>
+        </div>
+        <img class="hz-logo" src="./resources/hz-logo.svg" alt="HZ University of Applied Sciences shield">
+    </footer>
+</body>
+<!-- JS -->
+<script src="./js/darkmode.js"></script>
+</html>

@@ -1,135 +1,182 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <link rel="stylesheet" href="./css/style.css">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta charset="UTF-8">
-            <title>Dashboard</title>
-        </head>
-        <body>
-            <!-- NAVBAR HERE -->
-            <nav class="navbar">
-                    <a href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./blog.html">BLOG</a>
-                    <a href="./dashboard.html" class="current">DASHBOARD</a>
-                    <a href="./whyit.html">WHY IT?</a>
-            </nav>
-                <main class="main">
-                    <h1>DASHBOARD</h1>
-                    <p>This page shows my courses and grades in the first year of ITC with my progress towards 45ECs.</p>
-                    <p>Imagine a progressbar at the bottom of the page as it is currently nonexistent.</p>
-                    <table class="dashboard">
-                        <!-- MAIN DASHBOARD -->
-                        <tr class="Dash_Header">
-                            <th>Quarter</th>
-                            <th>Course</th>
-                            <th>EC</th>
-                            <th>Assessment</th>
-                            <th>Grade</th>
-                        </tr>
-                    
-                        <!-- Q1 -->
-                        <!-- Programme- & Career Orientation -->
-                        <tr class="Q1"></tr>
-                            <td class="Q" rowspan="4">1</td>
-                            <td>Programme- & Career Orientation</td>
-                            <td>5</td>
-                            <td>Individual Assignment</td>
-                            <td></td>
-                        </tr>
-                        <!-- Programming Basics -->
-                        <tr class="Q1">
-                            <td class="Q1">Programming Basics</td>
-                            <td class="Q1">5</td>
-                            <td class="Q1">Individual Assignment</td>
-                            <td class="Q1"></td>
-                        </tr>
-                        <!-- Computer Science Basics -->
-                        <tr class="Q1">
-                            <td class="Q1">Computer Science Basics</td>
-                            <td class="Q1">5</td>
-                            <td class="Q1">Written Test</td>
-                            <td class="Q1"></td>
-                        </tr>
-                        <!-- Object Oriented Programming -->
-                        <tr class="Q1">
-                            <td class="Q1">Object Oriented Programming</td>
-                            <td class="Q1">5</td>
-                            <td class="Q1">Individual Assignment</td>
-                            <td class="Q1"></td>
-                        </tr>
+<html lang="en">
 
-                        <!-- Q2 -->
-                        <!-- Agile and Team Management -->
-                        <tr class="Q2">
-                            <td class="Q" rowspan="2">2</td>
-                            <td class="Q2">Agile and Team Management</td>
-                            <td class="Q2">5</td>
-                            <td class="Q2">Individual Assignment</td>
-                            <td class="Q2"></td>
-                        </tr>
-                        <!-- Project: Foundations -->
-                        <tr class="Q2">
-                            <td class="Q2">Project: Foundations</td>
-                            <td class="Q2">5</td>
-                            <td class="Q2">Portfolio</td>
-                            <td class="Q2"></td>
-                        </tr>
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Dashboard about my study progress.">
+    <title>Dashboard | My ICT Portfolio</title>
+</head>
 
-                        <!-- Q3 -->
-                        <!-- Software Engineering Basics-->
-                        <tr class="Q3">
-                            <td class="Q" rowspan="3">3</td>
-                            <td class="Q3">Software Engineering Basics</td>
-                            <td class="Q3">5</td>
-                            <td class="Q3">Individual Assignment</td>
-                            <td class="Q3"></td>
-                        </tr>
-                        <!-- Foundations of Data -->
-                        <tr class="Q3">
-                            <td class="Q3">Foundations of Data</td>
-                            <td class="Q3">5</td>
-                            <td class="Q3">Individual Assignment</td>
-                            <td class="Q3"></td>
-                        </tr>
-                        <!-- Requirements Modeling -->
-                        <tr class="Q3">
-                            <td class="Q3">Requirements Modeling</td>
-                            <td class="Q3">5</td>
-                            <td class="Q3">Individual Assignment</td>
-                            <td class="Q3"></td>
-                        </tr>
+<body>
+    <!-- NAVBAR HERE -->
+    <nav class="navbar">
+        <a href="./index.html">HOME</a>
+        <a href="./about.html">ABOUT</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./dashboard.html" class="current">DASHBOARD</a>
+        <button class="theme-toggle" onclick="toggleDarkMode()">
+            <img id="theme-icon" src="./resources/moon.svg" alt="Enable dark mode">
+        </button>
+    </nav>
+    <main class="main">
+        <h1>DASHBOARD</h1>
+        <p>This page shows my courses and grades in the first year of ITC, including my progress towards 45
+            EC<sup>1</sup>.
+        </p>
 
-                        <!-- Q4 -->
-                        <!-- Web Application Development -->
-                        <tr class="Q4">
-                            <td class="Q" rowspan="4">4</td>
-                            <td class="Q4">Web Application Development</td>
-                            <td class="Q4">5</td>
-                            <td class="Q4">Individual Assignment</td>
-                            <td class="Q4"></td>
-                        </tr>
-                        <!-- Data Science Basics -->
-                        <tr class="Q4">
-                            <td class="Q4">Data Science Basics</td>
-                            <td class="Q4">5</td>
-                            <td class="Q4">Individual Assignment</td>
-                            <td class="Q4"></td>
-                        </tr>
-                        <!-- Project Applied Client Solutions -->
-                        <tr class="Q4">
-                            <td class="Q4">Project Applied Client Solutions</td>
-                            <td class="Q4">5</td>
-                            <td class="Q4">Portfolio</td>
-                            <td class="Q4"></td>
-                        </tr>
+        <!-- STUDY PROGRESS BAR -->
+        <section class="study-progress">
+            <h2>MY STUDY PROGRESS</h2>
+            <p class="progress-count">Credits earned: 15/60 EC</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%;"></div>
+                <div class="progress-marker"></div>
+            </div>
+            <div class="progress-labels">
+                <span>0 EC</span>
+                <span class="boundary-label">45 EC</span>
+                <span>60 EC</span>
+            </div>
+        </section>
 
+        <!-- DASHBOARD -->
+        <table class="dashboard">
+            <tr class="Dash_Header">
+                <th>Quarter</th>
+                <th>Course</th>
+                <th>EC</th>
+                <th>Assessment</th>
+                <th>Grade</th>
+            </tr>
+            <!-- Q1 -->
+            <!-- Programme- & Career Orientation -->
+            <tr class="Q1">
+                <td class="Q" rowspan="3">1</td>
+                <td class="Q1">Programme- & Career Orientation</td>
+                <td class="Q1">5</td>
+                <td class="Q1">Individual Assignment</td>
+                <td class="grade">7</td>
+            </tr>
+            <!-- Programming Basics -->
+            <tr class="Q1">
+                <td class="Q1">Programming Basics</td>
+                <td class="Q1">5</td>
+                <td class="Q1">Individual Assignment</td>
+                <td class="grade">5.8</td>
+            </tr>
+            <!-- Computer Science Basics -->
+            <tr class="Q1">
+                <td class="Q1">Computer Science Basics</td>
+                <td class="Q1">5</td>
+                <td class="Q1">Written Test</td>
+                <td class="grade">6</td>
+            </tr>
 
-                    </table>
-                    
-                </main>
-        </body>
-    </html>
+            <!-- Q2 -->
+            <!-- Object Oriented Programming -->
+            <tr class="Q2">
+                <td class="Q" rowspan="3">2</td>
+                <td class="Q2">Object Oriented Programming</td>
+                <td class="Q2">5</td>
+                <td class="Q2">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Agile and Team Management -->
+            <tr class="Q2">
+                <td class="Q2">Agile and Team Management</td>
+                <td class="Q2">5</td>
+                <td class="Q2">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Project: Foundations -->
+            <tr class="Q2">
+                <td class="Q2">Project: Foundations</td>
+                <td class="Q2">5</td>
+                <td class="Q2">Portfolio</td>
+                <td class="grade"></td>
+            </tr>
 
-    
+            <!-- Q3 -->
+            <!-- Software Engineering Basics-->
+            <tr class="Q3">
+                <td class="Q" rowspan="3">3</td>
+                <td class="Q3">Software Engineering Basics</td>
+                <td class="Q3">5</td>
+                <td class="Q3">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Foundations of Data -->
+            <tr class="Q3">
+                <td class="Q3">Foundations of Data</td>
+                <td class="Q3">5</td>
+                <td class="Q3">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Requirements Modeling -->
+            <tr class="Q3">
+                <td class="Q3">Requirements Modeling</td>
+                <td class="Q3">5</td>
+                <td class="Q3">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+
+            <!-- Q4 -->
+            <!-- Web Application Development -->
+            <tr class="Q4">
+                <td class="Q" rowspan="3">4</td>
+                <td class="Q4">Web Application Development</td>
+                <td class="Q4">5</td>
+                <td class="Q4">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Data Science Basics -->
+            <tr class="Q4">
+                <td class="Q4">Data Science Basics</td>
+                <td class="Q4">5</td>
+                <td class="Q4">Individual Assignment</td>
+                <td class="grade"></td>
+            </tr>
+            <!-- Project Applied Client Solutions -->
+            <tr class="Q4">
+                <td class="Q4">Project Applied Client Solutions</td>
+                <td class="Q4">5</td>
+                <td class="Q4">Portfolio</td>
+                <td class="grade"></td>
+            </tr>
+        </table>
+
+        <!-- EC INFO -->
+        <div class="ec-info">
+            <p><b>EC<sup>1</sup>:</b>
+                European Credits. They measure the workload associated
+                with completing courses and assessments. A full-time academic year
+                is normally worth 60 ECTS credits.
+                Read more about the European Credit Transfer and Accumulation System (ECTS)
+                <a href="https://education.ec.europa.eu/education-levels/higher-education/inclusive-and-connected-higher-education/european-credit-transfer-and-accumulation-system"
+                    target="_blank"><b>here.</b></a>
+            </p>
+        </div>
+    </main>
+
+    <!-- FOOTER / CONTACT / LOGO(?)-->
+    <footer class="footer">
+        <div class="footer-contact">
+            <p> <img src="./resources/Instagram_Glyph_White.svg" alt="Instagram"> <a
+                    href="https://www.instagram.com/zs.antal0/" target="_blank" rel="noopener noreferrer">zs.antal0</a>
+            </p>
+            <p> <img src="./resources/GitHub_Invertocat_White.svg" alt="GitHub"> <a href="https://github.com/firstaid01"
+                    target="_blank" rel="noopener noreferrer">firstaid01</a> </p>
+            <p> <img class="email-icon" src="./resources/mail.svg" alt="Email"> anta0002@hz.nl </p>
+        </div>
+        <div class="footer-copyright">
+            <p>Zsombor Antal</p>
+            <p>© 2026</p>
+        </div>
+        <img class="hz-logo" src="./resources/hz-logo.svg" alt="HZ University of Applied Sciences shield">
+    </footer>
+    <!-- JS -->
+    <script src="./js/darkmode.js"></script>
+</body>
+</html>
